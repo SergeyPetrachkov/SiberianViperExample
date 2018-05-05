@@ -38,12 +38,15 @@ class FeedViewController: UITableViewController {
     self.refreshControl = UIRefreshControl()
     self.refreshControl?.addTarget(self, action: #selector(self.handleRefresh(_:)), for: .valueChanged)
     self.refreshControl?.tintColor = UIColor.darkGray
+    self.tableView.register(FeedCell.self, forCellReuseIdentifier: "FeedCell")
+    self.tableView.tableFooterView = UIView()
   }
   
   // MARK: - Lifecycle
   override func viewDidLoad() {
     super.viewDidLoad()
     self.setup()
+    self.presenter?.start()
   }
 
   // MARK: - Actions

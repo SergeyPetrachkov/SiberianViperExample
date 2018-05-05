@@ -25,7 +25,6 @@ protocol FeedInteractorOutput: class {
 
 class FeedInteractor: FeedInteractorInput {
   let service: FeedServiceProtocol!
-  // let mapper: FeedMapperProtocol!
   required init(service: FeedServiceProtocol) {
     self.service = service
   }
@@ -35,9 +34,9 @@ class FeedInteractor: FeedInteractorInput {
   func requestItems(request: Feed.DataContext.Request) {
     self.service.getItems(request: request,
                           success: { items in
-                            // let models = items.map({ ListItemModel(currentModel: $0) })
-                            // self.output?.didReceive(response: Feed.DataContext.Response(originalRequest: request,
-                            //                                                             items: models))
+                             let models = items.map({ FeedModel(currentModel: $0) })
+                             self.output?.didReceive(response: Feed.DataContext.Response(originalRequest: request,
+                                                                                         items: models))
     },
                           failure: { error in
                             self.output?.didFail(with: error)

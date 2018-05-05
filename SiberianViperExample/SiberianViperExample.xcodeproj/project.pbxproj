@@ -17,7 +17,6 @@
 		39CB50EB209DA9CE003B49F4 /* CustomSplashEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CB50E4209DA9CE003B49F4 /* CustomSplashEntities.swift */; };
 		39CB50EC209DA9CE003B49F4 /* CustomSplashService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CB50E5209DA9CE003B49F4 /* CustomSplashService.swift */; };
 		39CB50EE209DAA00003B49F4 /* CustomSplash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39CB50ED209DAA00003B49F4 /* CustomSplash.storyboard */; };
-		39CB50F9209DED1B003B49F4 /* FeedMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CB50F0209DED1B003B49F4 /* FeedMapper.swift */; };
 		39CB50FA209DED1B003B49F4 /* FeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CB50F1209DED1B003B49F4 /* FeedPresenter.swift */; };
 		39CB50FB209DED1B003B49F4 /* FeedRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CB50F2209DED1B003B49F4 /* FeedRouter.swift */; };
 		39CB50FC209DED1B003B49F4 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CB50F3209DED1B003B49F4 /* FeedViewController.swift */; };
@@ -28,6 +27,10 @@
 		39CB5101209DED1B003B49F4 /* FeedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CB50F8209DED1B003B49F4 /* FeedService.swift */; };
 		39CB5105209DEF3C003B49F4 /* SVENavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CB5104209DEF3C003B49F4 /* SVENavigationController.swift */; };
 		39CB5107209DEF7C003B49F4 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CB5106209DEF7C003B49F4 /* UIColor+.swift */; };
+		39CB5109209DF3CF003B49F4 /* FeedHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CB5108209DF3CF003B49F4 /* FeedHeaderView.swift */; };
+		39CB510C209DF487003B49F4 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CB510B209DF487003B49F4 /* Account.swift */; };
+		39CB510E209DF4EB003B49F4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CB510D209DF4EB003B49F4 /* User.swift */; };
+		39CB5110209DF723003B49F4 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CB510F209DF723003B49F4 /* FeedItem.swift */; };
 		8982C38C5671A87C0E22D82A /* Pods_SiberianViperExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 239D66A4FED3F905AF40A082 /* Pods_SiberianViperExample.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,7 +48,6 @@
 		39CB50E4209DA9CE003B49F4 /* CustomSplashEntities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSplashEntities.swift; sourceTree = "<group>"; };
 		39CB50E5209DA9CE003B49F4 /* CustomSplashService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSplashService.swift; sourceTree = "<group>"; };
 		39CB50ED209DAA00003B49F4 /* CustomSplash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CustomSplash.storyboard; sourceTree = "<group>"; };
-		39CB50F0209DED1B003B49F4 /* FeedMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedMapper.swift; sourceTree = "<group>"; };
 		39CB50F1209DED1B003B49F4 /* FeedPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPresenter.swift; sourceTree = "<group>"; };
 		39CB50F2209DED1B003B49F4 /* FeedRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedRouter.swift; sourceTree = "<group>"; };
 		39CB50F3209DED1B003B49F4 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,10 @@
 		39CB50F8209DED1B003B49F4 /* FeedService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedService.swift; sourceTree = "<group>"; };
 		39CB5104209DEF3C003B49F4 /* SVENavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVENavigationController.swift; sourceTree = "<group>"; };
 		39CB5106209DEF7C003B49F4 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		39CB5108209DF3CF003B49F4 /* FeedHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedHeaderView.swift; sourceTree = "<group>"; };
+		39CB510B209DF487003B49F4 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		39CB510D209DF4EB003B49F4 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		39CB510F209DF723003B49F4 /* FeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
 		7A1FC40445806A6F045FACBF /* Pods-SiberianViperExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SiberianViperExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SiberianViperExample/Pods-SiberianViperExample.debug.xcconfig"; sourceTree = "<group>"; };
 		968C690772D682CA18B2CF5F /* Pods-SiberianViperExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SiberianViperExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-SiberianViperExample/Pods-SiberianViperExample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -105,6 +111,7 @@
 		39CB50DC209DA4FE003B49F4 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				39CB510A209DF3FB003B49F4 /* Entities */,
 				39CB5103209DEF24003B49F4 /* Shared */,
 				39CB50DE209DA52F003B49F4 /* CustomSplash */,
 				39CB50EF209DECDB003B49F4 /* Feed */,
@@ -138,7 +145,6 @@
 			isa = PBXGroup;
 			children = (
 				39CB5102209DEDE2003B49F4 /* Cells */,
-				39CB50F0209DED1B003B49F4 /* FeedMapper.swift */,
 				39CB50F1209DED1B003B49F4 /* FeedPresenter.swift */,
 				39CB50F2209DED1B003B49F4 /* FeedRouter.swift */,
 				39CB50F3209DED1B003B49F4 /* FeedViewController.swift */,
@@ -154,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				39CB50F6209DED1B003B49F4 /* FeedCell.swift */,
+				39CB5108209DF3CF003B49F4 /* FeedHeaderView.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -165,6 +172,16 @@
 				39CB5106209DEF7C003B49F4 /* UIColor+.swift */,
 			);
 			path = Shared;
+			sourceTree = "<group>";
+		};
+		39CB510A209DF3FB003B49F4 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				39CB510B209DF487003B49F4 /* Account.swift */,
+				39CB510D209DF4EB003B49F4 /* User.swift */,
+				39CB510F209DF723003B49F4 /* FeedItem.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 		CBF2523F5EE543F08EEA0897 /* Frameworks */ = {
@@ -300,14 +317,16 @@
 			files = (
 				39CB5105209DEF3C003B49F4 /* SVENavigationController.swift in Sources */,
 				39CB50EB209DA9CE003B49F4 /* CustomSplashEntities.swift in Sources */,
+				39CB5110209DF723003B49F4 /* FeedItem.swift in Sources */,
 				39CB5101209DED1B003B49F4 /* FeedService.swift in Sources */,
+				39CB5109209DF3CF003B49F4 /* FeedHeaderView.swift in Sources */,
 				39CB50E6209DA9CE003B49F4 /* CustomSplashPresenter.swift in Sources */,
+				39CB510C209DF487003B49F4 /* Account.swift in Sources */,
 				39CB50FB209DED1B003B49F4 /* FeedRouter.swift in Sources */,
 				39CB5100209DED1B003B49F4 /* FeedEntities.swift in Sources */,
 				39CB50EA209DA9CE003B49F4 /* CustomSplashInteractor.swift in Sources */,
 				39CB50E7209DA9CE003B49F4 /* CustomSplashRouter.swift in Sources */,
 				39CB50FA209DED1B003B49F4 /* FeedPresenter.swift in Sources */,
-				39CB50F9209DED1B003B49F4 /* FeedMapper.swift in Sources */,
 				39CB50FF209DED1B003B49F4 /* FeedCell.swift in Sources */,
 				39CB50FC209DED1B003B49F4 /* FeedViewController.swift in Sources */,
 				39CB50EC209DA9CE003B49F4 /* CustomSplashService.swift in Sources */,
@@ -316,6 +335,7 @@
 				39CB50E8209DA9CE003B49F4 /* CustomSplashViewController.swift in Sources */,
 				39CB50CB209DA4D6003B49F4 /* AppDelegate.swift in Sources */,
 				39CB5107209DEF7C003B49F4 /* UIColor+.swift in Sources */,
+				39CB510E209DF4EB003B49F4 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

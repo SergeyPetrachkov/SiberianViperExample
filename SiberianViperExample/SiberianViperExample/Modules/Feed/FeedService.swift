@@ -14,7 +14,7 @@ import SiberianVIPER
 protocol FeedServiceProtocol: class {
   init(reporter: ErrorReporter?)
   func getItems(request: Feed.DataContext.Request,
-                   success: @escaping ([Any]) -> Void,
+                   success: @escaping ([FeedItem]) -> Void,
                    failure: @escaping (Error) -> Void)
 }
 
@@ -27,8 +27,23 @@ class FeedService: FeedServiceProtocol {
   let errorReporter: ErrorReporter?
   
   func getItems(request: Feed.DataContext.Request,
-                   success: @escaping ([Any]) -> Void,
+                   success: @escaping ([FeedItem]) -> Void,
                    failure: @escaping (Error) -> Void) {
+    
+    DispatchQueue.main.asyncAfter(deadline: .now() + 2.5, execute: {
+      success([FeedItem(id: "111",
+                        title: "Welcome to the example",
+                        author: User(id: "1",
+                                     firstname: "Sergey",
+                                     lastname: "Petrachkov",
+                                     description: "Software engineer")),
+               FeedItem(id: "112",
+                        title: "How are you doing?",
+                        author: User(id: "2",
+                                     firstname: "Sergey",
+                                     lastname: "Petrachkov",
+                                     description: "Musician"))])
+    })
 
   }
 }

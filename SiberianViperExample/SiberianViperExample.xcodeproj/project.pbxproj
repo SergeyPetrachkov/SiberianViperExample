@@ -1,0 +1,514 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		39CB50CB209DA4D6003B49F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CB50CA209DA4D6003B49F4 /* AppDelegate.swift */; };
+		39CB50D2209DA4DD003B49F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39CB50D1209DA4DD003B49F4 /* Assets.xcassets */; };
+		39CB50D5209DA4DD003B49F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39CB50D3209DA4DD003B49F4 /* LaunchScreen.storyboard */; };
+		39CB50E6209DA9CE003B49F4 /* CustomSplashPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CB50DF209DA9CE003B49F4 /* CustomSplashPresenter.swift */; };
+		39CB50E7209DA9CE003B49F4 /* CustomSplashRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CB50E0209DA9CE003B49F4 /* CustomSplashRouter.swift */; };
+		39CB50E8209DA9CE003B49F4 /* CustomSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CB50E1209DA9CE003B49F4 /* CustomSplashViewController.swift */; };
+		39CB50EA209DA9CE003B49F4 /* CustomSplashInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CB50E3209DA9CE003B49F4 /* CustomSplashInteractor.swift */; };
+		39CB50EB209DA9CE003B49F4 /* CustomSplashEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CB50E4209DA9CE003B49F4 /* CustomSplashEntities.swift */; };
+		39CB50EC209DA9CE003B49F4 /* CustomSplashService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CB50E5209DA9CE003B49F4 /* CustomSplashService.swift */; };
+		39CB50EE209DAA00003B49F4 /* CustomSplash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39CB50ED209DAA00003B49F4 /* CustomSplash.storyboard */; };
+		39CB50F9209DED1B003B49F4 /* FeedMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CB50F0209DED1B003B49F4 /* FeedMapper.swift */; };
+		39CB50FA209DED1B003B49F4 /* FeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CB50F1209DED1B003B49F4 /* FeedPresenter.swift */; };
+		39CB50FB209DED1B003B49F4 /* FeedRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CB50F2209DED1B003B49F4 /* FeedRouter.swift */; };
+		39CB50FC209DED1B003B49F4 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CB50F3209DED1B003B49F4 /* FeedViewController.swift */; };
+		39CB50FD209DED1B003B49F4 /* FeedAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CB50F4209DED1B003B49F4 /* FeedAssembly.swift */; };
+		39CB50FE209DED1B003B49F4 /* FeedInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CB50F5209DED1B003B49F4 /* FeedInteractor.swift */; };
+		39CB50FF209DED1B003B49F4 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CB50F6209DED1B003B49F4 /* FeedCell.swift */; };
+		39CB5100209DED1B003B49F4 /* FeedEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CB50F7209DED1B003B49F4 /* FeedEntities.swift */; };
+		39CB5101209DED1B003B49F4 /* FeedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CB50F8209DED1B003B49F4 /* FeedService.swift */; };
+		39CB5105209DEF3C003B49F4 /* SVENavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CB5104209DEF3C003B49F4 /* SVENavigationController.swift */; };
+		39CB5107209DEF7C003B49F4 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CB5106209DEF7C003B49F4 /* UIColor+.swift */; };
+		8982C38C5671A87C0E22D82A /* Pods_SiberianViperExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 239D66A4FED3F905AF40A082 /* Pods_SiberianViperExample.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		239D66A4FED3F905AF40A082 /* Pods_SiberianViperExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SiberianViperExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		39CB50C7209DA4D6003B49F4 /* SiberianViperExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SiberianViperExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		39CB50CA209DA4D6003B49F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		39CB50D1209DA4DD003B49F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		39CB50D4209DA4DD003B49F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		39CB50D6209DA4DD003B49F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39CB50DF209DA9CE003B49F4 /* CustomSplashPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSplashPresenter.swift; sourceTree = "<group>"; };
+		39CB50E0209DA9CE003B49F4 /* CustomSplashRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSplashRouter.swift; sourceTree = "<group>"; };
+		39CB50E1209DA9CE003B49F4 /* CustomSplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSplashViewController.swift; sourceTree = "<group>"; };
+		39CB50E3209DA9CE003B49F4 /* CustomSplashInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSplashInteractor.swift; sourceTree = "<group>"; };
+		39CB50E4209DA9CE003B49F4 /* CustomSplashEntities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSplashEntities.swift; sourceTree = "<group>"; };
+		39CB50E5209DA9CE003B49F4 /* CustomSplashService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSplashService.swift; sourceTree = "<group>"; };
+		39CB50ED209DAA00003B49F4 /* CustomSplash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CustomSplash.storyboard; sourceTree = "<group>"; };
+		39CB50F0209DED1B003B49F4 /* FeedMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedMapper.swift; sourceTree = "<group>"; };
+		39CB50F1209DED1B003B49F4 /* FeedPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPresenter.swift; sourceTree = "<group>"; };
+		39CB50F2209DED1B003B49F4 /* FeedRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedRouter.swift; sourceTree = "<group>"; };
+		39CB50F3209DED1B003B49F4 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		39CB50F4209DED1B003B49F4 /* FeedAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedAssembly.swift; sourceTree = "<group>"; };
+		39CB50F5209DED1B003B49F4 /* FeedInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedInteractor.swift; sourceTree = "<group>"; };
+		39CB50F6209DED1B003B49F4 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		39CB50F7209DED1B003B49F4 /* FeedEntities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedEntities.swift; sourceTree = "<group>"; };
+		39CB50F8209DED1B003B49F4 /* FeedService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedService.swift; sourceTree = "<group>"; };
+		39CB5104209DEF3C003B49F4 /* SVENavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVENavigationController.swift; sourceTree = "<group>"; };
+		39CB5106209DEF7C003B49F4 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		7A1FC40445806A6F045FACBF /* Pods-SiberianViperExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SiberianViperExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SiberianViperExample/Pods-SiberianViperExample.debug.xcconfig"; sourceTree = "<group>"; };
+		968C690772D682CA18B2CF5F /* Pods-SiberianViperExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SiberianViperExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-SiberianViperExample/Pods-SiberianViperExample.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		39CB50C4209DA4D6003B49F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8982C38C5671A87C0E22D82A /* Pods_SiberianViperExample.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		39CB50BE209DA4D6003B49F4 = {
+			isa = PBXGroup;
+			children = (
+				39CB50C9209DA4D6003B49F4 /* SiberianViperExample */,
+				39CB50C8209DA4D6003B49F4 /* Products */,
+				F9761BBB0E73A987C70C651A /* Pods */,
+				CBF2523F5EE543F08EEA0897 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		39CB50C8209DA4D6003B49F4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				39CB50C7209DA4D6003B49F4 /* SiberianViperExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		39CB50C9209DA4D6003B49F4 /* SiberianViperExample */ = {
+			isa = PBXGroup;
+			children = (
+				39CB50DC209DA4FE003B49F4 /* Modules */,
+				39CB50DD209DA507003B49F4 /* Application */,
+				39CB50D1209DA4DD003B49F4 /* Assets.xcassets */,
+				39CB50D3209DA4DD003B49F4 /* LaunchScreen.storyboard */,
+				39CB50D6209DA4DD003B49F4 /* Info.plist */,
+			);
+			path = SiberianViperExample;
+			sourceTree = "<group>";
+		};
+		39CB50DC209DA4FE003B49F4 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				39CB5103209DEF24003B49F4 /* Shared */,
+				39CB50DE209DA52F003B49F4 /* CustomSplash */,
+				39CB50EF209DECDB003B49F4 /* Feed */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		39CB50DD209DA507003B49F4 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				39CB50CA209DA4D6003B49F4 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		39CB50DE209DA52F003B49F4 /* CustomSplash */ = {
+			isa = PBXGroup;
+			children = (
+				39CB50DF209DA9CE003B49F4 /* CustomSplashPresenter.swift */,
+				39CB50E0209DA9CE003B49F4 /* CustomSplashRouter.swift */,
+				39CB50E1209DA9CE003B49F4 /* CustomSplashViewController.swift */,
+				39CB50E3209DA9CE003B49F4 /* CustomSplashInteractor.swift */,
+				39CB50E4209DA9CE003B49F4 /* CustomSplashEntities.swift */,
+				39CB50E5209DA9CE003B49F4 /* CustomSplashService.swift */,
+				39CB50ED209DAA00003B49F4 /* CustomSplash.storyboard */,
+			);
+			path = CustomSplash;
+			sourceTree = "<group>";
+		};
+		39CB50EF209DECDB003B49F4 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				39CB5102209DEDE2003B49F4 /* Cells */,
+				39CB50F0209DED1B003B49F4 /* FeedMapper.swift */,
+				39CB50F1209DED1B003B49F4 /* FeedPresenter.swift */,
+				39CB50F2209DED1B003B49F4 /* FeedRouter.swift */,
+				39CB50F3209DED1B003B49F4 /* FeedViewController.swift */,
+				39CB50F4209DED1B003B49F4 /* FeedAssembly.swift */,
+				39CB50F5209DED1B003B49F4 /* FeedInteractor.swift */,
+				39CB50F7209DED1B003B49F4 /* FeedEntities.swift */,
+				39CB50F8209DED1B003B49F4 /* FeedService.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		39CB5102209DEDE2003B49F4 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				39CB50F6209DED1B003B49F4 /* FeedCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		39CB5103209DEF24003B49F4 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				39CB5104209DEF3C003B49F4 /* SVENavigationController.swift */,
+				39CB5106209DEF7C003B49F4 /* UIColor+.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		CBF2523F5EE543F08EEA0897 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				239D66A4FED3F905AF40A082 /* Pods_SiberianViperExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F9761BBB0E73A987C70C651A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7A1FC40445806A6F045FACBF /* Pods-SiberianViperExample.debug.xcconfig */,
+				968C690772D682CA18B2CF5F /* Pods-SiberianViperExample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		39CB50C6209DA4D6003B49F4 /* SiberianViperExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39CB50D9209DA4DD003B49F4 /* Build configuration list for PBXNativeTarget "SiberianViperExample" */;
+			buildPhases = (
+				22EB28A4D675F0158C39AA73 /* [CP] Check Pods Manifest.lock */,
+				39CB50C3209DA4D6003B49F4 /* Sources */,
+				39CB50C4209DA4D6003B49F4 /* Frameworks */,
+				39CB50C5209DA4D6003B49F4 /* Resources */,
+				BC9D9F3E97996F5222872F9A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SiberianViperExample;
+			productName = SiberianViperExample;
+			productReference = 39CB50C7209DA4D6003B49F4 /* SiberianViperExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		39CB50BF209DA4D6003B49F4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "West Coast IT";
+				TargetAttributes = {
+					39CB50C6209DA4D6003B49F4 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = 39CB50C2209DA4D6003B49F4 /* Build configuration list for PBXProject "SiberianViperExample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 39CB50BE209DA4D6003B49F4;
+			productRefGroup = 39CB50C8209DA4D6003B49F4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				39CB50C6209DA4D6003B49F4 /* SiberianViperExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		39CB50C5209DA4D6003B49F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39CB50EE209DAA00003B49F4 /* CustomSplash.storyboard in Resources */,
+				39CB50D5209DA4DD003B49F4 /* LaunchScreen.storyboard in Resources */,
+				39CB50D2209DA4DD003B49F4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		22EB28A4D675F0158C39AA73 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SiberianViperExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC9D9F3E97996F5222872F9A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SiberianViperExample/Pods-SiberianViperExample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SiberianSwift/SiberianSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SiberianVIPER/SiberianVIPER.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SiberianSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SiberianVIPER.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SiberianViperExample/Pods-SiberianViperExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		39CB50C3209DA4D6003B49F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39CB5105209DEF3C003B49F4 /* SVENavigationController.swift in Sources */,
+				39CB50EB209DA9CE003B49F4 /* CustomSplashEntities.swift in Sources */,
+				39CB5101209DED1B003B49F4 /* FeedService.swift in Sources */,
+				39CB50E6209DA9CE003B49F4 /* CustomSplashPresenter.swift in Sources */,
+				39CB50FB209DED1B003B49F4 /* FeedRouter.swift in Sources */,
+				39CB5100209DED1B003B49F4 /* FeedEntities.swift in Sources */,
+				39CB50EA209DA9CE003B49F4 /* CustomSplashInteractor.swift in Sources */,
+				39CB50E7209DA9CE003B49F4 /* CustomSplashRouter.swift in Sources */,
+				39CB50FA209DED1B003B49F4 /* FeedPresenter.swift in Sources */,
+				39CB50F9209DED1B003B49F4 /* FeedMapper.swift in Sources */,
+				39CB50FF209DED1B003B49F4 /* FeedCell.swift in Sources */,
+				39CB50FC209DED1B003B49F4 /* FeedViewController.swift in Sources */,
+				39CB50EC209DA9CE003B49F4 /* CustomSplashService.swift in Sources */,
+				39CB50FD209DED1B003B49F4 /* FeedAssembly.swift in Sources */,
+				39CB50FE209DED1B003B49F4 /* FeedInteractor.swift in Sources */,
+				39CB50E8209DA9CE003B49F4 /* CustomSplashViewController.swift in Sources */,
+				39CB50CB209DA4D6003B49F4 /* AppDelegate.swift in Sources */,
+				39CB5107209DEF7C003B49F4 /* UIColor+.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		39CB50D3209DA4DD003B49F4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39CB50D4209DA4DD003B49F4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		39CB50D7209DA4DD003B49F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		39CB50D8209DA4DD003B49F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		39CB50DA209DA4DD003B49F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A1FC40445806A6F045FACBF /* Pods-SiberianViperExample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = SiberianViperExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.westcoast-it.SiberianViperExample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		39CB50DB209DA4DD003B49F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 968C690772D682CA18B2CF5F /* Pods-SiberianViperExample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = SiberianViperExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.westcoast-it.SiberianViperExample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		39CB50C2209DA4D6003B49F4 /* Build configuration list for PBXProject "SiberianViperExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39CB50D7209DA4DD003B49F4 /* Debug */,
+				39CB50D8209DA4DD003B49F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39CB50D9209DA4DD003B49F4 /* Build configuration list for PBXNativeTarget "SiberianViperExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39CB50DA209DA4DD003B49F4 /* Debug */,
+				39CB50DB209DA4DD003B49F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 39CB50BF209DA4D6003B49F4 /* Project object */;
+}

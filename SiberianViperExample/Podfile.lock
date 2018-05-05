@@ -1,0 +1,20 @@
+PODS:
+  - SiberianSwift (1.0.10)
+  - SiberianVIPER (3.0.2)
+
+DEPENDENCIES:
+  - SiberianSwift
+  - SiberianVIPER
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - SiberianSwift
+    - SiberianVIPER
+
+SPEC CHECKSUMS:
+  SiberianSwift: e2dd6a922a782225e173c3b755282bf13f83fd72
+  SiberianVIPER: b070e4bd677b7894aa4756beefc1ace978dc48a0
+
+PODFILE CHECKSUM: 150676e11ca84f23c4e94ad30cb9940c456fbc1f
+
+COCOAPODS: 1.5.0

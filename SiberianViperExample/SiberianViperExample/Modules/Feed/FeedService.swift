@@ -36,13 +36,15 @@ class FeedService: FeedServiceProtocol {
                         author: User(id: "1",
                                      firstname: "Sergey",
                                      lastname: "Petrachkov",
-                                     description: "Software engineer")),
+                                     description: "Software engineer"),
+                        mediaInfo: MediaItem(id: "1254545", url: "https://pp.userapi.com/c639921/v639921945/509a5/nX__TG5bo4U.jpg")),
                FeedItem(id: "112",
                         title: "How are you doing?",
                         author: User(id: "2",
                                      firstname: "Sergey",
                                      lastname: "Petrachkov",
-                                     description: "Musician"))])
+                                     description: "Musician"),
+                        mediaInfo: nil)])
     })
 
   }

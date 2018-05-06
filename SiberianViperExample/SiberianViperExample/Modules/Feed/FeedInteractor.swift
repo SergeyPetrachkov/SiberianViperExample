@@ -11,7 +11,7 @@
 //
 
 import UIKit
-
+import SiberianVIPER
 protocol FeedInteractorInput: class {
   init(feedService: FeedServiceProtocol, profileService: ProfileServiceProtocol?)
   var output: FeedInteractorOutput? { get set }
@@ -44,9 +44,15 @@ class FeedInteractor: FeedInteractorInput {
   func requestItems(request: Feed.DataContext.Request) {
     self.feedService.getItems(request: request,
                           success: { items in
-                             let models = items.map({ FeedModel(currentModel: $0) })
-                             self.output?.didReceive(response: Feed.DataContext.Response(originalRequest: request,
-                                                                                         items: models))
+                            let models: [CollectionModel] = items.map({ model in
+                              if model.mediaInfo != nil {
+                                return MediaFeedItemModel(currentModel: model)
+                              } else {
+                                return FeedModel(currentModel: model)
+                              }
+                            })
+                            self.output?.didReceive(response: Feed.DataContext.Response(originalRequest: request,
+                                                                                        items: models))
     },
                           failure: { error in
                             self.output?.didFail(with: error)

@@ -13,18 +13,24 @@ import Foundation
 import UIKit
 import SiberianVIPER
 
-struct FeedModel: CollectionModelGeneric {
+class FeedModel: CollectionModelGeneric {
+  
   static var anyViewType: UIView.Type {
     return FeedCell.self
   }
   
   let currentModel: FeedItem
   
+  init(currentModel: FeedItem) {
+    self.currentModel = currentModel
+  }
+  
   func setup(view: FeedCell) {
     view.textLabel?.text = "\(self.currentModel.author.firstname) \(self.currentModel.author.description) - \(self.currentModel.title)"
   }
 }
 class FeedCell: UITableViewCell {
+  
   override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
     super.init(style: style, reuseIdentifier: reuseIdentifier)
     self.textLabel?.numberOfLines = 0

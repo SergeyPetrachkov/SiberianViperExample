@@ -6,6 +6,7 @@ target 'SiberianViperExample' do
   use_frameworks!
   pod "SiberianVIPER"
   pod "SiberianSwift"
+  pod "Kingfisher"
 
   # Pods for SiberianViperExample
 

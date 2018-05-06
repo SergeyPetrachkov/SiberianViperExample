@@ -11,5 +11,6 @@ import Foundation
 struct FeedItem {
   let id: String
   let title: String
-  let author: User 
+  let author: User
+  let mediaInfo: MediaItem?
 }

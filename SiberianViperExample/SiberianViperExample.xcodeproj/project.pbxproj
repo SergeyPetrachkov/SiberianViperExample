@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		3917862F209EE48C00DE99DB /* ProfileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3917862E209EE48C00DE99DB /* ProfileService.swift */; };
+		39178631209EEA0900DE99DB /* MediaFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39178630209EEA0900DE99DB /* MediaFeedCell.swift */; };
+		39178633209EEEF300DE99DB /* MediaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39178632209EEEF300DE99DB /* MediaItem.swift */; };
+		39178635209EF50F00DE99DB /* SelfSizingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39178634209EF50F00DE99DB /* SelfSizingModel.swift */; };
 		39CB50CB209DA4D6003B49F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CB50CA209DA4D6003B49F4 /* AppDelegate.swift */; };
 		39CB50D2209DA4DD003B49F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39CB50D1209DA4DD003B49F4 /* Assets.xcassets */; };
 		39CB50D5209DA4DD003B49F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39CB50D3209DA4DD003B49F4 /* LaunchScreen.storyboard */; };
@@ -38,6 +41,9 @@
 /* Begin PBXFileReference section */
 		239D66A4FED3F905AF40A082 /* Pods_SiberianViperExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SiberianViperExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3917862E209EE48C00DE99DB /* ProfileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileService.swift; sourceTree = "<group>"; };
+		39178630209EEA0900DE99DB /* MediaFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaFeedCell.swift; sourceTree = "<group>"; };
+		39178632209EEEF300DE99DB /* MediaItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaItem.swift; sourceTree = "<group>"; };
+		39178634209EF50F00DE99DB /* SelfSizingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfSizingModel.swift; sourceTree = "<group>"; };
 		39CB50C7209DA4D6003B49F4 /* SiberianViperExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SiberianViperExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39CB50CA209DA4D6003B49F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39CB50D1209DA4DD003B49F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -163,6 +169,7 @@
 			children = (
 				39CB50F6209DED1B003B49F4 /* FeedCell.swift */,
 				39CB5108209DF3CF003B49F4 /* FeedHeaderView.swift */,
+				39178630209EEA0900DE99DB /* MediaFeedCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -173,6 +180,7 @@
 				39CB5104209DEF3C003B49F4 /* SVENavigationController.swift */,
 				39CB5106209DEF7C003B49F4 /* UIColor+.swift */,
 				3917862E209EE48C00DE99DB /* ProfileService.swift */,
+				39178634209EF50F00DE99DB /* SelfSizingModel.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -183,6 +191,7 @@
 				39CB510B209DF487003B49F4 /* Account.swift */,
 				39CB510D209DF4EB003B49F4 /* User.swift */,
 				39CB510F209DF723003B49F4 /* FeedItem.swift */,
+				39178632209EEEF300DE99DB /* MediaItem.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -298,11 +307,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SiberianViperExample/Pods-SiberianViperExample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/SiberianSwift/SiberianSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SiberianVIPER/SiberianVIPER.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SiberianSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SiberianVIPER.framework",
 			);
@@ -322,6 +333,7 @@
 				39CB50EB209DA9CE003B49F4 /* CustomSplashEntities.swift in Sources */,
 				39CB5110209DF723003B49F4 /* FeedItem.swift in Sources */,
 				39CB5101209DED1B003B49F4 /* FeedService.swift in Sources */,
+				39178635209EF50F00DE99DB /* SelfSizingModel.swift in Sources */,
 				39CB5109209DF3CF003B49F4 /* FeedHeaderView.swift in Sources */,
 				39CB50E6209DA9CE003B49F4 /* CustomSplashPresenter.swift in Sources */,
 				39CB510C209DF487003B49F4 /* Account.swift in Sources */,
@@ -335,7 +347,9 @@
 				39CB50EC209DA9CE003B49F4 /* CustomSplashService.swift in Sources */,
 				39CB50FD209DED1B003B49F4 /* FeedAssembly.swift in Sources */,
 				39CB50FE209DED1B003B49F4 /* FeedInteractor.swift in Sources */,
+				39178633209EEEF300DE99DB /* MediaItem.swift in Sources */,
 				39CB50E8209DA9CE003B49F4 /* CustomSplashViewController.swift in Sources */,
+				39178631209EEA0900DE99DB /* MediaFeedCell.swift in Sources */,
 				39CB50CB209DA4D6003B49F4 /* AppDelegate.swift in Sources */,
 				39CB5107209DEF7C003B49F4 /* UIColor+.swift in Sources */,
 				39CB510E209DF4EB003B49F4 /* User.swift in Sources */,

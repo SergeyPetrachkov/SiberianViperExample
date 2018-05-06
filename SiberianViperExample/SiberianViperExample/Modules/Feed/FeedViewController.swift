@@ -12,6 +12,16 @@
 import UIKit
 import SiberianVIPER
 
+class FeedCollectionManager: SiberianCollectionManager {
+  func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    if let selfSizing = self.provider.anyItem(for: indexPath) as? SelfSizingModel {
+      return selfSizing.calculatedSize.height
+    } else {
+      return 44
+    }
+  }
+}
+
 class FeedViewController: UITableViewController {
   // MARK: - UI properties
   var headerView: FeedHeaderView?
@@ -23,9 +33,9 @@ class FeedViewController: UITableViewController {
       let provider = strongSelf.presenter as? AnySiberianCollectionSource else {
         return nil
     }
-    let manager = SiberianCollectionManager(provider: provider,
-                                            delegate: strongSelf.presenter as? SiberianCollectionDelegate,
-                                            fetchDelegate: nil)
+    let manager = FeedCollectionManager(provider: provider,
+                                        delegate: strongSelf.presenter as? SiberianCollectionDelegate,
+                                        fetchDelegate: nil)
     return manager
   }()
 
@@ -37,7 +47,9 @@ class FeedViewController: UITableViewController {
     self.refreshControl?.addTarget(self, action: #selector(self.handleRefresh(_:)), for: .valueChanged)
     self.refreshControl?.tintColor = UIColor.darkGray
     self.tableView.register(FeedCell.self, forCellReuseIdentifier: "FeedCell")
+    self.tableView.register(MediaFeedCell.self, forCellReuseIdentifier: "MediaFeedCell")
     self.tableView.tableFooterView = UIView()
+    self.tableView.estimatedRowHeight = 200
   }
   
   // MARK: - Lifecycle

@@ -57,6 +57,7 @@ class FeedPresenter: CollectionPresenter, FeedPresenterInput {
     super.start()
     self.awaitableDelegate = self.output
     _ = try? self.fetchItems(reset: true)
+    self.interactor?.requestProfile()
   }
   // MARK: - Base overrides
   @discardableResult override func fetchItems(reset: Bool) throws -> (skip: Int, take: Int) {
@@ -82,6 +83,11 @@ extension FeedPresenter: FeedInteractorOutput {
     self.viewModel.items.append(contentsOf: response.items as [CollectionModel])
     self.output?.didChangeState(viewModel: self.viewModel)
     self.exitPendingState()
+  }
+  
+  func didReceive(profileResponse: Feed.DataContext.ProfileResponse) {
+    self.viewModel.headerModel = FeedHeaderModel(currentModel: profileResponse.profile)
+    self.output?.didChangeState(viewModel: self.viewModel)
   }
 
   func didFail(with error: Error) {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3917862F209EE48C00DE99DB /* ProfileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3917862E209EE48C00DE99DB /* ProfileService.swift */; };
 		39CB50CB209DA4D6003B49F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CB50CA209DA4D6003B49F4 /* AppDelegate.swift */; };
 		39CB50D2209DA4DD003B49F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39CB50D1209DA4DD003B49F4 /* Assets.xcassets */; };
 		39CB50D5209DA4DD003B49F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39CB50D3209DA4DD003B49F4 /* LaunchScreen.storyboard */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		239D66A4FED3F905AF40A082 /* Pods_SiberianViperExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SiberianViperExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3917862E209EE48C00DE99DB /* ProfileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileService.swift; sourceTree = "<group>"; };
 		39CB50C7209DA4D6003B49F4 /* SiberianViperExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SiberianViperExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39CB50CA209DA4D6003B49F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39CB50D1209DA4DD003B49F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 			children = (
 				39CB5104209DEF3C003B49F4 /* SVENavigationController.swift */,
 				39CB5106209DEF7C003B49F4 /* UIColor+.swift */,
+				3917862E209EE48C00DE99DB /* ProfileService.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 				39CB50CB209DA4D6003B49F4 /* AppDelegate.swift in Sources */,
 				39CB5107209DEF7C003B49F4 /* UIColor+.swift in Sources */,
 				39CB510E209DF4EB003B49F4 /* User.swift in Sources */,
+				3917862F209EE48C00DE99DB /* ProfileService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

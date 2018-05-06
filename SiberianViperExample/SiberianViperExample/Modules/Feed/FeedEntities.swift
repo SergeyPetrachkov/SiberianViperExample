@@ -30,7 +30,13 @@ enum Feed {
       
       let items: [CollectionModel]
     }
+    struct ProfileResponse {
+      let profile: Profile
+    }
     class ViewModel: CollectionViewModel {
+      
+      public var headerModel: CollectionModel?
+      
       var batchSize: Int = 20
       
       var items: [CollectionModel] = []

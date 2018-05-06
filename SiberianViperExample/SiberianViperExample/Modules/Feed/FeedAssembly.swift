@@ -36,7 +36,7 @@ class FeedAssembly {
   }
   fileprivate static func injectInteractor() -> FeedInteractorInput {
     let service = injectService()
-    return FeedInteractor(service: service)
+    return FeedInteractor(feedService: service, profileService: LocalProfileStore())
   }
   fileprivate static func injectService() -> FeedServiceProtocol {
     return FeedService(reporter: nil)

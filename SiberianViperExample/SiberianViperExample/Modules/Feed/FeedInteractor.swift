@@ -13,26 +13,36 @@
 import UIKit
 
 protocol FeedInteractorInput: class {
-  init(service: FeedServiceProtocol)
+  init(feedService: FeedServiceProtocol, profileService: ProfileServiceProtocol?)
   var output: FeedInteractorOutput? { get set }
   func requestItems(request: Feed.DataContext.Request)
+  func requestProfile()
 }
 
 protocol FeedInteractorOutput: class {
   func didReceive(response: Feed.DataContext.Response)
+  func didReceive(profileResponse: Feed.DataContext.ProfileResponse)
   func didFail(with error: Error)
 }
 
 class FeedInteractor: FeedInteractorInput {
-  let service: FeedServiceProtocol!
-  required init(service: FeedServiceProtocol) {
-    self.service = service
+  let feedService: FeedServiceProtocol!
+  let profileService: ProfileServiceProtocol?
+  required init(feedService: FeedServiceProtocol, profileService: ProfileServiceProtocol?) {
+    self.feedService = feedService
+    self.profileService = profileService
   }
 
   weak var output: FeedInteractorOutput?
   // MARK: - Input
+  func requestProfile() {
+    self.profileService?.fetchProfile(success: { user in
+      self.output?.didReceive(profileResponse: Feed.DataContext.ProfileResponse(profile: Profile(user: user)))
+    },
+                                      failure: { error in })
+  }
   func requestItems(request: Feed.DataContext.Request) {
-    self.service.getItems(request: request,
+    self.feedService.getItems(request: request,
                           success: { items in
                              let models = items.map({ FeedModel(currentModel: $0) })
                              self.output?.didReceive(response: Feed.DataContext.Response(originalRequest: request,

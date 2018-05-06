@@ -14,7 +14,7 @@ import SiberianVIPER
 
 class FeedViewController: UITableViewController {
   // MARK: - UI properties
-  
+  var headerView: FeedHeaderView?
   // MARK: - Essentials
   var presenter: FeedPresenterInput?
 
@@ -26,8 +26,6 @@ class FeedViewController: UITableViewController {
     let manager = SiberianCollectionManager(provider: provider,
                                             delegate: strongSelf.presenter as? SiberianCollectionDelegate,
                                             fetchDelegate: nil)
-    
-    
     return manager
   }()
 
@@ -67,6 +65,16 @@ extension FeedViewController: FeedPresenterOutput {
     self.refreshControl?.endRefreshing()
   }
   func didChangeState(viewModel : Feed.DataContext.ViewModel) {
+    if viewModel.headerModel != nil {
+      if self.headerView == nil {
+        self.headerView = FeedHeaderView(frame: CGRect(x: 0,
+                                                          y: 0,
+                                                          width: self.tableView.frame.width,
+                                                          height: 200))
+        self.tableView.tableHeaderView = self.headerView
+      }
+      viewModel.headerModel?.setupAny(view: self.headerView!)
+    }
     if viewModel.changeSet.count == 0 {
       self.presenter?.exitPendingState()
       return

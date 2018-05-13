@@ -1,0 +1,4 @@
+github "Alamofire/Alamofire" "4.7.2"
+github "SergeyPetrachkov/SiberianSwift" "1.0.10"
+github "SergeyPetrachkov/SiberianVIPER" "3.0.3"
+github "onevcat/Kingfisher" "4.7.0"
